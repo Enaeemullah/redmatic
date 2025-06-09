@@ -48,7 +48,7 @@ const Careers = () => {
       title: "Senior Full-Stack Developer",
       department: "Engineering",
       level: "Senior Level",
-      location: "San Francisco, CA / Remote",
+      location: "Gilgit / Remote",
       type: "Full-time",
       description: "Join our engineering team to build scalable web applications using React, Node.js, and cloud technologies.",
       requirements: [
@@ -71,7 +71,7 @@ const Careers = () => {
       title: "UI/UX Designer",
       department: "Design",
       level: "Mid Level",
-      location: "New York, NY / Remote",
+      location: "Gilgit / Remote",
       type: "Full-time",
       description: "Create beautiful and intuitive user experiences for our clients' digital products.",
       requirements: [
@@ -94,7 +94,7 @@ const Careers = () => {
       title: "DevOps Engineer",
       department: "Engineering",
       level: "Senior Level",
-      location: "San Francisco, CA",
+      location: "Gilgit, CA",
       type: "Full-time",
       description: "Build and maintain our cloud infrastructure and deployment pipelines.",
       requirements: [
@@ -140,7 +140,7 @@ const Careers = () => {
       title: "Junior Frontend Developer",
       department: "Engineering",
       level: "Entry Level",
-      location: "San Francisco, CA / Remote",
+      location: "Gilgit / Remote",
       type: "Full-time",
       description: "Start your career building modern web applications with our supportive team.",
       requirements: [
@@ -163,7 +163,7 @@ const Careers = () => {
       title: "Marketing Manager",
       department: "Marketing",
       level: "Mid Level",
-      location: "New York, NY / Remote",
+      location: "Gilgit / Remote",
       type: "Full-time",
       description: "Lead our marketing efforts to grow brand awareness and generate leads.",
       requirements: [
