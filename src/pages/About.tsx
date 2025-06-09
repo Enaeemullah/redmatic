@@ -79,7 +79,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center px-4 py-2 bg-red-100 rounded-full mb-6">
-              <span className="text-red-800 font-semibold text-sm tracking-wide">ABOUT REDMATIC</span>
+              <span className="text-red-800 font-semibold text-sm tracking-wide">ABOUT REDMETIC</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Innovating Tomorrow's
@@ -114,7 +114,7 @@ const About = () => {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Founded in 2019 with a vision to bridge the gap between complex technology and business success, 
-                Redmatic has grown into a trusted partner for companies seeking digital transformation.
+                Redmetic has grown into a trusted partner for companies seeking digital transformation.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Our multidisciplinary team combines deep technical expertise with creative problem-solving 

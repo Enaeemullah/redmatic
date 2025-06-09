@@ -192,7 +192,7 @@ const Home = () => {
                 Future
               </span>
               <span className="block text-4xl md:text-5xl lg:text-6xl text-gray-600 font-light mt-4 animate-fade-in-up animation-delay-400">
-                with Redmatic
+                with Redmetic
               </span>
             </h1>
             
@@ -399,9 +399,9 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div className="animate-on-scroll-left">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Redmatic?</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Redmetic?</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded in 2019, Redmatic has grown from a small startup to a recognized leader in technology solutions. 
+                Founded in 2019, Redmetic has grown from a small startup to a recognized leader in technology solutions. 
                 We combine deep technical expertise with creative innovation to deliver exceptional results for our clients.
               </p>
               <div className="space-y-4 stagger-animation">

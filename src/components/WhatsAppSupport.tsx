@@ -87,7 +87,7 @@ const WhatsAppSupport: React.FC<WhatsAppSupportProps> = ({
                   }`}></div>
                 </div>
                 <div>
-                  <div className="font-semibold">Redmatic Support</div>
+                  <div className="font-semibold">Redmetic Support</div>
                   <div className="text-xs text-green-100">
                     {isOnline ? 'Online • Typically replies instantly' : 'Offline • We\'ll reply soon'}
                   </div>
@@ -111,7 +111,7 @@ const WhatsAppSupport: React.FC<WhatsAppSupportProps> = ({
                   👋 Hi there! How can we help you today? Choose a quick option below or type your message.
                 </p>
               </div>
-              <div className="text-xs text-gray-500 mt-1">Redmatic Team</div>
+              <div className="text-xs text-gray-500 mt-1">Redmetic Team</div>
             </div>
 
             {/* Quick Messages */}

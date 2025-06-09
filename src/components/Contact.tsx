@@ -46,9 +46,9 @@ Message: ${formData.message || 'I would like to know more about your services.'}
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      content: "hello@redmatic.com",
+      content: "info@redmetic.com",
       description: "Send us an email anytime",
-      link: "mailto:hello@redmatic.com",
+      link: "mailto:info@redmetic.com",
       color: "text-blue-600"
     },
     {

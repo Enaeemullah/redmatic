@@ -42,7 +42,7 @@ const Hero = () => {
               Future
             </span>
             <span className="block text-4xl md:text-5xl lg:text-6xl text-gray-600 font-light mt-4">
-              with Redmatic
+              with Redmetic
             </span>
           </h1>
           

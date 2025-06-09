@@ -50,7 +50,6 @@ const Careers = () => {
       level: "Senior Level",
       location: "San Francisco, CA / Remote",
       type: "Full-time",
-      salary: "$120,000 - $160,000",
       description: "Join our engineering team to build scalable web applications using React, Node.js, and cloud technologies.",
       requirements: [
         "5+ years of full-stack development experience",
@@ -74,7 +73,6 @@ const Careers = () => {
       level: "Mid Level",
       location: "New York, NY / Remote",
       type: "Full-time",
-      salary: "$80,000 - $110,000",
       description: "Create beautiful and intuitive user experiences for our clients' digital products.",
       requirements: [
         "3+ years of UI/UX design experience",
@@ -98,7 +96,6 @@ const Careers = () => {
       level: "Senior Level",
       location: "San Francisco, CA",
       type: "Full-time",
-      salary: "$130,000 - $170,000",
       description: "Build and maintain our cloud infrastructure and deployment pipelines.",
       requirements: [
         "4+ years of DevOps/Infrastructure experience",
@@ -122,7 +119,6 @@ const Careers = () => {
       level: "Mid Level",
       location: "Remote",
       type: "Full-time",
-      salary: "$100,000 - $130,000",
       description: "Drive product strategy and execution for our client projects and internal tools.",
       requirements: [
         "3+ years of product management experience",
@@ -146,7 +142,6 @@ const Careers = () => {
       level: "Entry Level",
       location: "San Francisco, CA / Remote",
       type: "Full-time",
-      salary: "$70,000 - $90,000",
       description: "Start your career building modern web applications with our supportive team.",
       requirements: [
         "1-2 years of frontend development experience",
@@ -170,7 +165,6 @@ const Careers = () => {
       level: "Mid Level",
       location: "New York, NY / Remote",
       type: "Full-time",
-      salary: "$85,000 - $115,000",
       description: "Lead our marketing efforts to grow brand awareness and generate leads.",
       requirements: [
         "4+ years of marketing experience",
@@ -221,7 +215,7 @@ const Careers = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Build Your Career
-              <span className="block text-red-600">With Redmatic</span>
+              <span className="block text-red-600">With Redmetic</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Join a team of passionate innovators who are shaping the future of technology. 
@@ -339,10 +333,10 @@ const Careers = () => {
                     <Clock className="w-4 h-4 mr-2 text-gray-400" />
                     {position.type}
                   </div>
-                  <div className="flex items-center text-sm text-gray-600">
+                  {/* <div className="flex items-center text-sm text-gray-600">
                     <DollarSign className="w-4 h-4 mr-2 text-gray-400" />
                     {position.salary}
-                  </div>
+                  </div> */}
                 </div>
 
                 <button className="w-full bg-red-600 text-white py-3 rounded-xl font-semibold hover:bg-red-700 transition-colors duration-300">
@@ -384,10 +378,10 @@ const Careers = () => {
                       <MapPin className="w-4 h-4 mr-2" />
                       {selectedPosition.location}
                     </div>
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center">
                       <DollarSign className="w-4 h-4 mr-2" />
                       {selectedPosition.salary}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <button 

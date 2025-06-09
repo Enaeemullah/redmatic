@@ -25,7 +25,7 @@ const Team = () => {
         linkedin: "#",
         twitter: "#",
         github: "#",
-        email: "alex@redmatic.com"
+        email: "alex@redmetic.com"
       }
     },
     {
@@ -47,7 +47,7 @@ const Team = () => {
         linkedin: "#",
         twitter: "#",
         github: "#",
-        email: "sarah@redmatic.com"
+        email: "sarah@redmetic.com"
       }
     },
     {
@@ -69,7 +69,7 @@ const Team = () => {
         linkedin: "#",
         twitter: "#",
         github: "#",
-        email: "michael@redmatic.com"
+        email: "michael@redmetic.com"
       }
     },
     {
@@ -91,7 +91,7 @@ const Team = () => {
         linkedin: "#",
         twitter: "#",
         github: "#",
-        email: "emily@redmatic.com"
+        email: "emily@redmetic.com"
       }
     },
     {
@@ -113,7 +113,7 @@ const Team = () => {
         linkedin: "#",
         twitter: "#",
         github: "#",
-        email: "david@redmatic.com"
+        email: "david@redmetic.com"
       }
     },
     {
@@ -135,7 +135,7 @@ const Team = () => {
         linkedin: "#",
         twitter: "#",
         github: "#",
-        email: "lisa@redmatic.com"
+        email: "lisa@redmetic.com"
       }
     },
     {
@@ -157,7 +157,7 @@ const Team = () => {
         linkedin: "#",
         twitter: "#",
         github: "#",
-        email: "james@redmatic.com"
+        email: "james@redmetic.com"
       }
     },
     {
@@ -179,7 +179,7 @@ const Team = () => {
         linkedin: "#",
         twitter: "#",
         github: "#",
-        email: "maria@redmatic.com"
+        email: "maria@redmetic.com"
       }
     }
   ];
@@ -214,7 +214,7 @@ const Team = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Meet the Innovators
-              <span className="block text-red-600">Behind Redmatic</span>
+              <span className="block text-red-600">Behind Redmetic</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Our diverse team of passionate technologists, designers, and strategists work together to create 

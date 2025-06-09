@@ -57,7 +57,7 @@ const Footer = () => {
   ];
 
   // Custom Logo Component
-  const RedmaticLogo = ({ className = "w-7 h-7" }: { className?: string }) => (
+  const RedmeticLogo = ({ className = "w-7 h-7" }: { className?: string }) => (
     <svg 
       className={className}
       viewBox="0 0 400 400" 
@@ -85,7 +85,7 @@ const Footer = () => {
               <Link to="/" className="flex items-center space-x-3 mb-6 group">
                 <div className="relative">
                   <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                    <RedmaticLogo className="w-7 h-7 text-white" />
+                    <RedmeticLogo className="w-7 h-7 text-white" />
                   </div>
                   <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-400 rounded-full animate-pulse"></div>
                 </div>
@@ -233,7 +233,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex flex-col md:flex-row items-center mb-4 md:mb-0">
                 <p className="text-gray-400 mb-2 md:mb-0 md:mr-6">
-                  © {new Date().getFullYear()} Redmatic. All rights reserved.
+                  © {new Date().getFullYear()} Redmetic. All rights reserved.
                 </p>
                 <div className="flex items-center text-gray-400 text-sm">
                   <span>Made with</span>

@@ -48,9 +48,9 @@ Message: ${formData.message || 'I would like to know more about your services.'}
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      content: "hello@redmatic.com",
+      content: "info@redmetic.com",
       description: "Send us an email anytime",
-      link: "mailto:hello@redmatic.com",
+      link: "mailto:info@redmetic.com",
       color: "text-blue-600",
       available: "24/7"
     },
@@ -88,7 +88,7 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       city: "Lahore",
       address: "123 Innovation Drive, Tech District, Lahore, Pakistan",
       phone: "+92 343 514 6644",
-      email: "lahore@redmatic.com",
+      email: "lahore@redmetic.com",
       hours: "Monday - Friday: 9:00 AM - 6:00 PM PST",
       timezone: "Pakistan Standard Time (PST)",
       isHeadquarters: true
@@ -97,7 +97,7 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       city: "Karachi",
       address: "456 Business Bay, Clifton, Karachi, Pakistan",
       phone: "+92 301 234 5678",
-      email: "karachi@redmatic.com",
+      email: "karachi@redmetic.com",
       hours: "Monday - Friday: 9:00 AM - 6:00 PM PST",
       timezone: "Pakistan Standard Time (PST)",
       isHeadquarters: false
@@ -106,7 +106,7 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       city: "Islamabad",
       address: "789 Tech Hub, Blue Area, Islamabad, Pakistan",
       phone: "+92 302 345 6789",
-      email: "islamabad@redmatic.com",
+      email: "islamabad@redmetic.com",
       hours: "Monday - Friday: 9:00 AM - 6:00 PM PST",
       timezone: "Pakistan Standard Time (PST)",
       isHeadquarters: false

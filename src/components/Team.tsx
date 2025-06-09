@@ -98,7 +98,7 @@ const Team = () => {
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Meet the Innovators
-            <span className="block text-red-600">Behind Redmatic</span>
+            <span className="block text-red-600">Behind Redmetic</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Our diverse team of passionate technologists, designers, and strategists work together to create 
