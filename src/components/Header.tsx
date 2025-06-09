@@ -57,11 +57,11 @@ const Header = () => {
               <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-400 rounded-full animate-pulse"></div>
             </div>
             <div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-red-600 group-hover:to-red-700 transition-all duration-300">
-                Redmatic
-              </span>
+<span className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent group-hover:from-red-700 group-hover:to-red-800 transition-all duration-300">
+  REDMETIC
+</span>
               <div className="text-xs text-gray-500 font-medium tracking-wider">
-                TECH SOLUTIONS & SKILLS
+                TECHNOLOGIES
               </div>
             </div>
           </Link>

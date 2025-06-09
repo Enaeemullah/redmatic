@@ -90,9 +90,9 @@ const Footer = () => {
                   <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-400 rounded-full animate-pulse"></div>
                 </div>
                 <div>
-                  <span className="text-3xl font-bold">Redmatic</span>
+                  <span className="text-3xl font-bold">REDMETIC</span>
                   <div className="text-xs text-gray-400 font-medium tracking-wider uppercase">
-                    Tech Solutions & Skills
+                    TECHNOLOGIES
                   </div>
                 </div>
               </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors group">
                   <Mail className="w-5 h-5 text-red-500 group-hover:text-red-400" />
-                  <span>hello@redmatic.com</span>
+                  <span>info@redmetic.com</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors group">
                   <Phone className="w-5 h-5 text-red-500 group-hover:text-red-400" />
@@ -114,7 +114,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors group">
                   <MapPin className="w-5 h-5 text-red-500 group-hover:text-red-400" />
-                  <span>Lahore, Pakistan</span>
+                  <span>Gilgit, Pakistan</span>
                 </div>
               </div>
             </div>

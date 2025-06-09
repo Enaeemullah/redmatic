@@ -123,11 +123,15 @@ const Home = () => {
 
   const technologies = [
     { name: "React", category: "Frontend" },
+    { name: "Angular", category: "Frontend" },
+    { name: "Java Spring Boot", category: "Backend" },
+    { name: "MySQL", category: "Database" },
     { name: "Node.js", category: "Backend" },
-    { name: "Python", category: "Backend" },
+    { name: "WordPress", category: "CMS" },
     { name: "AWS", category: "Cloud" },
     { name: "Docker", category: "DevOps" },
     { name: "MongoDB", category: "Database" },
+    { name: "PostgreSQL", category: "Database" },
     { name: "TypeScript", category: "Language" },
     { name: "Kubernetes", category: "DevOps" }
   ];
