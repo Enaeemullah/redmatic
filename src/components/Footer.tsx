@@ -114,7 +114,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors group">
                   <MapPin className="w-5 h-5 text-red-500 group-hover:text-red-400" />
-                  <span>Gilgit, Pakistan</span>
+                  <span>DC Chowk, Gahkuch<br/>District Ghizer, Gilgit-Baltistan, Pakistan</span>
                 </div>
               </div>
             </div>
