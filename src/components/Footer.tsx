@@ -137,40 +137,10 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Products */}
-            <div>
-              <h3 className="text-xl font-bold mb-6">Our Products</h3>
-              <ul className="space-y-3">
-                {products.map((product, index) => (
-                  <li key={index}>
-                    <Link 
-                      to={product.path}
-                      className="text-gray-300 hover:text-red-400 transition-colors duration-300 cursor-pointer text-sm flex items-center group"
-                    >
-                      <div className="text-red-500 mr-2 group-hover:text-red-400">
-                        {product.icon}
-                      </div>
-                      {product.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              
-              <h3 className="text-xl font-bold mb-6 mt-8">Services</h3>
-              <ul className="space-y-3">
-                {services.slice(0, 4).map((service, index) => (
-                  <li key={index} className="text-gray-300 hover:text-red-400 transition-colors duration-300 cursor-pointer text-sm">
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
             {/* Skill Programs */}
             <div>
               <h3 className="text-xl font-bold mb-6 flex items-center">
-                <BookOpen className="w-5 h-5 mr-2 text-red-500" />
-                Skill Programs
+                Services
               </h3>
               <ul className="space-y-3">
                 {skillPrograms.map((program, index) => (
@@ -235,13 +205,13 @@ const Footer = () => {
             </div>
             
             {/* Legal Links */}
-            <div className="mt-8 pt-8 border-t border-gray-800 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+            {/* <div className="mt-8 pt-8 border-t border-gray-800 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-red-400 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-red-400 transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-red-400 transition-colors">Cookie Policy</a>
               <a href="#" className="hover:text-red-400 transition-colors">Accessibility</a>
               <Link to="/skills" className="hover:text-red-400 transition-colors">Skill Development</Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
