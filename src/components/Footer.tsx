@@ -8,11 +8,11 @@ const Footer = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Products', path: '/products' },
-    { name: 'Portfolio', path: '/portfolio' },
+    // { name: 'Portfolio', path: '/portfolio' },
     { name: 'Team', path: '/team' },
-    { name: 'Skills', path: '/skills' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Careers', path: '/careers' },
+    // { name: 'Skills', path: '/skills' },
+    // { name: 'Blog', path: '/blog' },
+    // { name: 'Careers', path: '/careers' },
     { name: 'Contact', path: '/contact' }
   ];
 
@@ -40,7 +40,7 @@ const Footer = () => {
   ];
 
   const resources = [
-    { name: 'Blog', path: '/blog' },
+    // { name: 'Blog', path: '/blog' },
     { name: 'Careers', path: '/careers' },
     { name: 'Case Studies', path: '/portfolio' },
     { name: 'Skill Programs', path: '/skills' },

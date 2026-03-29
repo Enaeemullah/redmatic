@@ -551,12 +551,6 @@ const Home = () => {
               >
                 Get Started Today
               </Link>
-              <Link 
-                to="/portfolio"
-                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-all duration-300 hover-lift"
-              >
-                View Success Stories
-              </Link>
             </div>
           </div>
         </div>

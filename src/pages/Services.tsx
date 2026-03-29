@@ -450,12 +450,6 @@ const Services = () => {
             >
               Schedule a Consultation
             </Link>
-            <Link 
-              to="/portfolio"
-              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-all duration-300"
-            >
-              View Our Work
-            </Link>
           </div>
         </div>
       </section>
