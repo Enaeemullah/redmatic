@@ -459,30 +459,6 @@ Message: ${formData.message || 'I would like to know more about your services.'}
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-red-500 to-red-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-            Don't wait any longer. Let's discuss your project and see how we can help you achieve your goals.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-red-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Schedule Free Consultation
-            </button>
-            <a 
-              href="https://wa.me/923435146644"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-all duration-300 flex items-center justify-center"
-            >
-              <MessageSquare className="w-5 h-5 mr-2" />
-              WhatsApp: +92 343 514 6644
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

@@ -245,30 +245,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-red-500 to-red-600 text-white logo-background-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Work with Us?</h2>
-          <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-            Join our growing list of satisfied clients and let us help you transform your business with technology.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              to="/contact"
-              className="bg-white text-red-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Start Your Project
-            </Link>
-            <Link 
-              to="/team"
-              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-all duration-300"
-            >
-              Meet Our Team
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
