@@ -49,11 +49,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <Linkedin className="w-5 h-5" />, href: '#', name: 'LinkedIn', color: 'hover:text-blue-600' },
-    { icon: <Twitter className="w-5 h-5" />, href: '#', name: 'Twitter', color: 'hover:text-blue-400' },
-    { icon: <Facebook className="w-5 h-5" />, href: '#', name: 'Facebook', color: 'hover:text-pink-600' },
-    { icon: <Github className="w-5 h-5" />, href: '#', name: 'GitHub', color: 'hover:text-gray-600' },
-    { icon: <Instagram className="w-5 h-5" />, href: '#', name: 'Instagram', color: 'hover:text-pink-600' }
+    { icon: <Linkedin className="w-5 h-5" />, href: 'https://www.linkedin.com/company/redmetic/', name: 'LinkedIn', color: 'hover:text-blue-600' },
+    { icon: <Facebook className="w-5 h-5" />, href: 'https://www.facebook.com/redmetic/', name: 'Facebook', color: 'hover:text-blue-600' },
+    { icon: <Github className="w-5 h-5" />, href: 'https://github.com/Redmetic/', name: 'GitHub', color: 'hover:text-gray-600' },
+    { icon: <Instagram className="w-5 h-5" />, href: 'https://www.instagram.com/redmetic.tech/', name: 'Instagram', color: 'hover:text-pink-600' }
   ];
 
   // Custom Logo Component
