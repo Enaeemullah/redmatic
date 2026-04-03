@@ -14,7 +14,7 @@ const Products = () => {
       description: 'Complete point-of-sale and inventory management solution designed for modern businesses.',
       longDescription: 'RedStock is a comprehensive POS and inventory management system that streamlines your business operations. From sales tracking to inventory control, RedStock provides real-time insights and automated processes to help your business grow efficiently.',
       icon: <ShoppingCart className="w-12 h-12" />,
-      image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg',
+      image: '/inventory.webp',
       gradient: 'from-blue-500 to-blue-600',
       category: 'Business Management',
       features: [
@@ -80,7 +80,7 @@ const Products = () => {
       description: 'Comprehensive school management solution covering academics, administration, and communication.',
       longDescription: 'RedSchool is an all-in-one school management system that digitizes every aspect of educational administration. From student enrollment to fee management, academic tracking to parent communication, RedSchool streamlines operations for educational institutions of all sizes.',
       icon: <GraduationCap className="w-12 h-12" />,
-      image: 'https://images.pexels.com/photos/4386465/pexels-photo-4386465.jpeg',
+      image: '/school.webp',
       gradient: 'from-green-500 to-green-600',
       category: 'Education Management',
       features: [
