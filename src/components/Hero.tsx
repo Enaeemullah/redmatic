@@ -84,18 +84,6 @@ const Hero = () => {
               </div>
             ))}
           </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-16 animate-fade-in-up animation-delay-1000">
-            <p className="text-gray-500 text-sm mb-6">Trusted by innovative companies worldwide</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              {['TechCorp', 'InnovateLab', 'FutureSync', 'DataFlow', 'CloudVision'].map((company, index) => (
-                <div key={index} className="text-gray-400 font-semibold text-lg hover:text-gray-600 transition-colors">
-                  {company}
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
