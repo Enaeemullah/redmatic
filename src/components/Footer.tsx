@@ -9,7 +9,7 @@ const Footer = () => {
     { name: 'Services', path: '/services' },
     { name: 'Products', path: '/products' },
     // { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Team', path: '/team' },
+    // { name: 'Team', path: '/team' },
     // { name: 'Skills', path: '/skills' },
     // { name: 'Blog', path: '/blog' },
     // { name: 'Careers', path: '/careers' },
@@ -44,7 +44,7 @@ const Footer = () => {
     { name: 'Careers', path: '/careers' },
     { name: 'Case Studies', path: '/portfolio' },
     { name: 'Skill Programs', path: '/skills' },
-    { name: 'Tech Insights', path: '/blog' },
+    // { name: 'Tech Insights', path: '/blog' },
     // { name: 'API Documentation', path: '#' }
   ];
 
