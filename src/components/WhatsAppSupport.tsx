@@ -8,7 +8,7 @@ interface WhatsAppSupportProps {
 }
 
 const WhatsAppSupport: React.FC<WhatsAppSupportProps> = ({
-  phoneNumber = '+923435146644',
+  phoneNumber = '+923414841372',
   defaultMessage = 'Hello! I would like to know more about your services.',
   position = 'bottom-right'
 }) => {
