@@ -14,7 +14,6 @@ const Services = () => {
       technologies: ["React", "Node.js", "Python", "Java", "PostgreSQL", "MongoDB"],
       gradient: "from-blue-500 to-blue-600",
       popular: false,
-      pricing: "Starting from $15,000",
       timeline: "8-16 weeks",
       details: {
         overview: "Our custom software development services help businesses create unique solutions that perfectly fit their specific needs. We use agile methodologies and cutting-edge technologies to deliver scalable, maintainable, and secure applications.",
@@ -42,7 +41,6 @@ const Services = () => {
       technologies: ["Figma", "Adobe Creative Suite", "Sketch", "InVision", "Principle", "Framer"],
       gradient: "from-purple-500 to-purple-600",
       popular: true,
-      pricing: "Starting from $8,000",
       timeline: "4-8 weeks",
       details: {
         overview: "We create stunning visual designs and intuitive user experiences that not only look great but also drive engagement and conversions. Our design process is user-centered and data-driven.",
@@ -70,7 +68,6 @@ const Services = () => {
       technologies: ["AWS", "Azure", "Google Cloud", "Docker", "Kubernetes", "Terraform"],
       gradient: "from-green-500 to-green-600",
       popular: false,
-      pricing: "Starting from $12,000",
       timeline: "6-12 weeks",
       details: {
         overview: "Transform your infrastructure with modern cloud solutions and DevOps practices. We help you achieve better scalability, reliability, and cost-efficiency while maintaining security and compliance.",
@@ -98,7 +95,6 @@ const Services = () => {
       technologies: ["Swift", "Kotlin", "React Native", "Flutter", "Firebase", "App Store Connect"],
       gradient: "from-orange-500 to-orange-600",
       popular: false,
-      pricing: "Starting from $20,000",
       timeline: "12-20 weeks",
       details: {
         overview: "Create powerful mobile applications that engage users and drive business growth. We develop both native and cross-platform solutions optimized for performance and user experience.",
@@ -126,7 +122,6 @@ const Services = () => {
       technologies: ["Python", "R", "TensorFlow", "Power BI", "Tableau", "Apache Spark"],
       gradient: "from-indigo-500 to-indigo-600",
       popular: false,
-      pricing: "Starting from $18,000",
       timeline: "10-16 weeks",
       details: {
         overview: "Unlock the power of your data with comprehensive analytics solutions. We help you collect, process, and analyze data to make informed business decisions and predict future trends.",
@@ -154,7 +149,6 @@ const Services = () => {
       technologies: ["OWASP", "ISO 27001", "SOC 2", "GDPR", "HIPAA", "PCI DSS"],
       gradient: "from-red-500 to-red-600",
       popular: false,
-      pricing: "Starting from $10,000",
       timeline: "4-8 weeks",
       details: {
         overview: "Protect your business with comprehensive cybersecurity solutions. We provide security assessments, implementation of security measures, and ongoing monitoring to keep your data and systems safe.",
@@ -179,7 +173,6 @@ const Services = () => {
   const packages = [
     {
       name: "Starter",
-      price: "$5,000",
       duration: "2-4 weeks",
       description: "Perfect for small businesses and startups",
       features: [
@@ -193,7 +186,6 @@ const Services = () => {
     },
     {
       name: "Professional",
-      price: "$15,000",
       duration: "6-10 weeks",
       description: "Ideal for growing businesses",
       features: [
@@ -208,7 +200,6 @@ const Services = () => {
     },
     {
       name: "Enterprise",
-      price: "$50,000+",
       duration: "12+ weeks",
       description: "For large-scale enterprise solutions",
       features: [
@@ -285,7 +276,6 @@ const Services = () => {
                     <Clock className="w-4 h-4 mr-1" />
                     {service.timeline}
                   </div>
-                  <div className="font-semibold text-red-600">{service.pricing}</div>
                 </div>
                 
                 <ul className="space-y-3 mb-8">
@@ -359,7 +349,6 @@ const Services = () => {
                 <div className="bg-gray-50 p-6 rounded-2xl">
                   <div className="flex justify-between items-center mb-4">
                     <div>
-                      <div className="text-2xl font-bold text-gray-900">{services[activeService].pricing}</div>
                       <div className="text-gray-600">Timeline: {services[activeService].timeline}</div>
                     </div>
                   </div>
@@ -406,7 +395,6 @@ const Services = () => {
                 
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                  <div className="text-4xl font-bold text-red-600 mb-2">{pkg.price}</div>
                   <div className="text-gray-600">{pkg.duration}</div>
                   <p className="text-gray-600 mt-4">{pkg.description}</p>
                 </div>

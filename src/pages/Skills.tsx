@@ -16,8 +16,6 @@ const Skills = () => {
       duration: '3 Months (12 weeks)',
       classTime: '1.5 hours',
       schedule: 'Mon - Fri',
-      totalFee: 18000,
-      monthlyFee: 6000,
       currency: 'PKR',
       level: 'Beginner to Intermediate',
       students: '150+',
@@ -77,8 +75,6 @@ const Skills = () => {
       duration: '3 Months (12 weeks)',
       classTime: '1.5 hours',
       schedule: 'Mon - Fri',
-      totalFee: 18000,
-      monthlyFee: 6000,
       currency: 'PKR',
       level: 'Beginner to Intermediate',
       students: '120+',
@@ -138,8 +134,6 @@ const Skills = () => {
       duration: '3 Months (12 weeks)',
       classTime: '1.5 hours',
       schedule: 'Mon - Fri',
-      totalFee: 18000,
-      monthlyFee: 6000,
       currency: 'PKR',
       level: 'Beginner to Advanced',
       students: '200+',
@@ -199,8 +193,6 @@ const Skills = () => {
       duration: '3 Months (12 weeks)',
       classTime: '1.5 hours',
       schedule: 'Mon - Fri',
-      totalFee: 30000,
-      monthlyFee: 10000,
       currency: 'PKR',
       level: 'Beginner to Intermediate',
       students: '80+',
@@ -260,8 +252,6 @@ const Skills = () => {
       duration: '3 Months (12 weeks)',
       classTime: '1.5 hours',
       schedule: 'Mon - Fri',
-      totalFee: 18000,
-      monthlyFee: 6000,
       currency: 'PKR',
       level: 'Beginner to Advanced',
       students: '90+',
@@ -321,8 +311,6 @@ const Skills = () => {
       duration: '3 Months (12 weeks)',
       classTime: '1.5 hours',
       schedule: 'Mon - Fri',
-      totalFee: 30000,
-      monthlyFee: 10000,
       currency: 'PKR',
       level: 'Intermediate to Advanced',
       students: '60+',
@@ -542,10 +530,6 @@ const Skills = () => {
                     <div className={`inline-flex p-2 rounded-xl bg-gradient-to-br ${course.gradient} text-white`}>
                       {course.icon}
                     </div>
-                    <div className="text-right">
-                      <div className="text-2xl font-bold text-red-600">PKR {course.totalFee.toLocaleString()}</div>
-                      <div className="text-sm text-gray-500">Total Fee</div>
-                    </div>
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">
@@ -581,9 +565,6 @@ const Skills = () => {
                         />
                       ))}
                       <span className="ml-2 text-sm text-gray-600">({course.rating})</span>
-                    </div>
-                    <div className="text-sm font-semibold text-red-600">
-                      PKR {course.monthlyFee.toLocaleString()}/month
                     </div>
                   </div>
                 </div>
@@ -696,32 +677,6 @@ const Skills = () => {
                         <div className="flex justify-between">
                           <span className="text-gray-600">Students:</span>
                           <span className="font-semibold">{selectedCourse.students}</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-red-50 p-6 rounded-2xl">
-                      <h4 className="text-xl font-bold text-gray-900 mb-4">Pricing</h4>
-                      <div className="space-y-3">
-                        <div className="flex justify-between items-center">
-                          <span className="text-gray-600">Total Fee:</span>
-                          <span className="text-2xl font-bold text-red-600">
-                            PKR {selectedCourse.totalFee.toLocaleString()}
-                          </span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <span className="text-gray-600">Monthly Fee:</span>
-                          <span className="text-lg font-semibold text-gray-900">
-                            PKR {selectedCourse.monthlyFee.toLocaleString()}
-                          </span>
-                        </div>
-                        <div className="bg-green-100 p-3 rounded-lg">
-                          <div className="text-green-800 font-semibold text-sm">
-                            💰 Save 15% with upfront payment!
-                          </div>
-                          <div className="text-green-700 text-sm">
-                            Pay PKR {Math.round(selectedCourse.totalFee * 0.85).toLocaleString()} instead
-                          </div>
                         </div>
                       </div>
                     </div>

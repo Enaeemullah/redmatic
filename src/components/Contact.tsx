@@ -1,14 +1,24 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle, Clock, MessageSquare, Calendar, ArrowRight } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  CheckCircle,
+  Clock,
+  MessageSquare,
+  Calendar,
+  ArrowRight,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    budget: '',
-    timeline: '',
-    message: ''
+    name: "",
+    email: "",
+    company: "",
+    budget: "",
+    timeline: "",
+    message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -16,30 +26,41 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
-    setFormData({ name: '', email: '', company: '', budget: '', timeline: '', message: '' });
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      budget: "",
+      timeline: "",
+      message: "",
+    });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleWhatsAppContact = () => {
     const message = `Hello! I'm interested in your services.
 
-Name: ${formData.name || 'Not provided'}
-Email: ${formData.email || 'Not provided'}
-Company: ${formData.company || 'Not provided'}
-Budget: ${formData.budget || 'Not provided'}
-Timeline: ${formData.timeline || 'Not provided'}
+Name: ${formData.name || "Not provided"}
+Email: ${formData.email || "Not provided"}
+Company: ${formData.company || "Not provided"}
+Budget: ${formData.budget || "Not provided"}
+Timeline: ${formData.timeline || "Not provided"}
 
-Message: ${formData.message || 'I would like to know more about your services.'}`;
+Message: ${formData.message || "I would like to know more about your services."}`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/923435146644?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank');
+    const whatsappUrl = `https://wa.me/923414841372?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   const contactMethods = [
@@ -49,15 +70,15 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       content: "info@redmetic.com",
       description: "Send us an email anytime",
       link: "mailto:info@redmetic.com",
-      color: "text-blue-600"
+      color: "text-blue-600",
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      content: "+92 343 514 6644",
+      content: "+92 341 4841372",
       description: "Mon-Fri from 9am to 6pm",
       link: "tel:+923435146644",
-      color: "text-green-600"
+      color: "text-green-600",
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
@@ -65,7 +86,7 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       content: "Chat with us instantly",
       description: "Available during business hours",
       link: "https://wa.me/923435146644",
-      color: "text-green-600"
+      color: "text-green-600",
     },
     {
       icon: <Calendar className="w-6 h-6" />,
@@ -73,34 +94,36 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       content: "Book a consultation",
       description: "Free 30-minute strategy call",
       link: "#",
-      color: "text-red-600"
-    }
+      color: "text-red-600",
+    },
   ];
 
   const officeInfo = {
     address: "123 Innovation Drive, Tech District, Lahore, Pakistan",
     hours: "Monday - Friday: 9:00 AM - 6:00 PM PST",
-    timezone: "Pakistan Standard Time (PST)"
+    timezone: "Pakistan Standard Time (PST)",
   };
 
   return (
     <section id="contact" className="py-24 bg-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-red-50/30 via-transparent to-transparent"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-4 py-2 bg-red-100 rounded-full mb-6">
-            <span className="text-red-800 font-semibold text-sm tracking-wide">GET IN TOUCH</span>
+            <span className="text-red-800 font-semibold text-sm tracking-wide">
+              GET IN TOUCH
+            </span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Let's Build Something
             <span className="block text-red-600">Amazing Together</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your ideas into reality? We'd love to hear about your project and discuss 
-            how we can help you achieve your goals.
+            Ready to transform your ideas into reality? We'd love to hear about
+            your project and discuss how we can help you achieve your goals.
           </p>
         </div>
 
@@ -110,24 +133,32 @@ Message: ${formData.message || 'I would like to know more about your services.'}
             <h3 className="text-2xl font-bold text-gray-900 mb-8">
               Get in Touch
             </h3>
-            
+
             <div className="space-y-6 mb-12">
               {contactMethods.map((method, index) => (
                 <a
                   key={index}
                   href={method.link}
-                  target={method.title === 'WhatsApp' ? '_blank' : '_self'}
-                  rel={method.title === 'WhatsApp' ? 'noopener noreferrer' : ''}
+                  target={method.title === "WhatsApp" ? "_blank" : "_self"}
+                  rel={method.title === "WhatsApp" ? "noopener noreferrer" : ""}
                   className="group block p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:border-red-200 transition-all duration-300"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className={`${method.color} group-hover:scale-110 transition-transform duration-300`}>
+                    <div
+                      className={`${method.color} group-hover:scale-110 transition-transform duration-300`}
+                    >
                       {method.icon}
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-bold text-gray-900 mb-1">{method.title}</h4>
-                      <p className="text-gray-700 font-medium mb-1">{method.content}</p>
-                      <p className="text-gray-500 text-sm">{method.description}</p>
+                      <h4 className="font-bold text-gray-900 mb-1">
+                        {method.title}
+                      </h4>
+                      <p className="text-gray-700 font-medium mb-1">
+                        {method.content}
+                      </p>
+                      <p className="text-gray-500 text-sm">
+                        {method.description}
+                      </p>
                     </div>
                     <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-red-600 group-hover:translate-x-1 transition-all duration-300" />
                   </div>
@@ -159,8 +190,12 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                 <div className="mb-8 p-6 bg-green-50 border border-green-200 rounded-2xl flex items-center">
                   <CheckCircle className="w-6 h-6 text-green-600 mr-3" />
                   <div>
-                    <div className="font-semibold text-green-800">Message sent successfully!</div>
-                    <div className="text-green-700 text-sm">We'll get back to you within 24 hours.</div>
+                    <div className="font-semibold text-green-800">
+                      Message sent successfully!
+                    </div>
+                    <div className="text-green-700 text-sm">
+                      We'll get back to you within 24 hours.
+                    </div>
                   </div>
                 </div>
               )}
@@ -168,7 +203,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
               <form onSubmit={handleSubmit} className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-3">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-bold text-gray-700 mb-3"
+                    >
                       Full Name *
                     </label>
                     <input
@@ -183,7 +221,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-bold text-gray-700 mb-3">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-bold text-gray-700 mb-3"
+                    >
                       Email Address *
                     </label>
                     <input
@@ -200,7 +241,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-bold text-gray-700 mb-3">
+                  <label
+                    htmlFor="company"
+                    className="block text-sm font-bold text-gray-700 mb-3"
+                  >
                     Company Name
                   </label>
                   <input
@@ -216,7 +260,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="budget" className="block text-sm font-bold text-gray-700 mb-3">
+                    <label
+                      htmlFor="budget"
+                      className="block text-sm font-bold text-gray-700 mb-3"
+                    >
                       Project Budget
                     </label>
                     <select
@@ -235,7 +282,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                     </select>
                   </div>
                   <div>
-                    <label htmlFor="timeline" className="block text-sm font-bold text-gray-700 mb-3">
+                    <label
+                      htmlFor="timeline"
+                      className="block text-sm font-bold text-gray-700 mb-3"
+                    >
                       Project Timeline
                     </label>
                     <select
@@ -256,7 +306,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-3">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-bold text-gray-700 mb-3"
+                  >
                     Project Details *
                   </label>
                   <textarea
@@ -279,7 +332,7 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                     Send Message
                     <Send className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
                   </button>
-                  
+
                   <button
                     type="button"
                     onClick={handleWhatsAppContact}

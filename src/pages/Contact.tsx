@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle, Clock, MessageSquare, Calendar, ArrowRight, Globe, Users, Award } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  CheckCircle,
+  Clock,
+  MessageSquare,
+  Calendar,
+  ArrowRight,
+  Globe,
+  Users,
+  Award,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    budget: '',
-    timeline: '',
-    service: '',
-    message: ''
+    name: "",
+    email: "",
+    company: "",
+    budget: "",
+    timeline: "",
+    service: "",
+    message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -17,31 +30,43 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
-    setFormData({ name: '', email: '', company: '', budget: '', timeline: '', service: '', message: '' });
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      budget: "",
+      timeline: "",
+      service: "",
+      message: "",
+    });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleWhatsAppContact = () => {
     const message = `Hello! I'm interested in your services.
 
-Name: ${formData.name || 'Not provided'}
-Email: ${formData.email || 'Not provided'}
-Company: ${formData.company || 'Not provided'}
-Service: ${formData.service || 'Not provided'}
-Budget: ${formData.budget || 'Not provided'}
-Timeline: ${formData.timeline || 'Not provided'}
+Name: ${formData.name || "Not provided"}
+Email: ${formData.email || "Not provided"}
+Company: ${formData.company || "Not provided"}
+Service: ${formData.service || "Not provided"}
+Budget: ${formData.budget || "Not provided"}
+Timeline: ${formData.timeline || "Not provided"}
 
-Message: ${formData.message || 'I would like to know more about your services.'}`;
+Message: ${formData.message || "I would like to know more about your services."}`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/923435146644?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, "_blank");
   };
 
   const contactMethods = [
@@ -52,16 +77,16 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       description: "Send us an email anytime",
       link: "mailto:info@redmetic.com",
       color: "text-blue-600",
-      available: "24/7"
+      available: "24/7",
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      content: "+92 343 514 6644",
+      content: "+92 341 4841372",
       description: "Mon-Fri from 9am to 6pm PST",
       link: "tel:+923435146644",
       color: "text-green-600",
-      available: "Business Hours"
+      available: "Business Hours",
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
@@ -70,7 +95,7 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       description: "Available during business hours",
       link: "https://wa.me/923435146644",
       color: "text-green-600",
-      available: "Business Hours"
+      available: "Business Hours",
     },
     {
       icon: <Calendar className="w-6 h-6" />,
@@ -79,57 +104,61 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       description: "Free 30-minute strategy call",
       link: "#",
       color: "text-red-600",
-      available: "By Appointment"
-    }
+      available: "By Appointment",
+    },
   ];
 
   const offices = [
     {
-      city: "Lahore",
-      address: "123 Innovation Drive, Tech District, Lahore, Pakistan",
-      phone: "+92 343 514 6644",
-      email: "lahore@redmetic.com",
+      city: "Gahkuch City",
+      address: "DC Chowk, Gahkuch District Ghizer, Gilgit-Baltistan, Pakistan",
+      phone: "+92 341 4841372",
+      email: "info@redmetic.com",
       hours: "Monday - Friday: 9:00 AM - 6:00 PM PST",
       timezone: "Pakistan Standard Time (PST)",
-      isHeadquarters: true
+      isHeadquarters: true,
     },
     {
       city: "Karachi",
-      address: "456 Business Bay, Clifton, Karachi, Pakistan",
+      address: "Old Saleemabad JK-01, Karachi, Pakistan",
       phone: "+92 301 234 5678",
-      email: "karachi@redmetic.com",
+      email: "info@redmetic.com",
       hours: "Monday - Friday: 9:00 AM - 6:00 PM PST",
       timezone: "Pakistan Standard Time (PST)",
-      isHeadquarters: false
+      isHeadquarters: false,
     },
     {
       city: "Islamabad",
-      address: "789 Tech Hub, Blue Area, Islamabad, Pakistan",
+      address: "I-9/3 Industrial Area, Islamabad, Pakistan",
       phone: "+92 302 345 6789",
-      email: "islamabad@redmetic.com",
+      email: "info@redmetic.com",
       hours: "Monday - Friday: 9:00 AM - 6:00 PM PST",
       timezone: "Pakistan Standard Time (PST)",
-      isHeadquarters: false
-    }
+      isHeadquarters: false,
+    },
   ];
 
   const faqs = [
     {
       question: "What is your typical project timeline?",
-      answer: "Project timelines vary based on complexity and scope. Simple projects typically take 4-8 weeks, while complex enterprise solutions may take 12-24 weeks. We provide detailed timelines during our initial consultation."
+      answer:
+        "Project timelines vary based on complexity and scope. Simple projects typically take 4-8 weeks, while complex enterprise solutions may take 12-24 weeks. We provide detailed timelines during our initial consultation.",
     },
     {
       question: "Do you offer ongoing support and maintenance?",
-      answer: "Yes, we provide comprehensive support and maintenance packages. Our standard package includes 24/7 monitoring, regular updates, security patches, and technical support for 12 months post-launch."
+      answer:
+        "Yes, we provide comprehensive support and maintenance packages. Our standard package includes 24/7 monitoring, regular updates, security patches, and technical support for 12 months post-launch.",
     },
     {
       question: "What technologies do you specialize in?",
-      answer: "We specialize in modern web technologies including React, Node.js, Python, cloud platforms (AWS, Azure, GCP), mobile development (React Native, Flutter), and emerging technologies like AI/ML and blockchain."
+      answer:
+        "We specialize in modern web technologies including React, Node.js, Python, cloud platforms (AWS, Azure, GCP), mobile development (React Native, Flutter), and emerging technologies like AI/ML and blockchain.",
     },
     {
       question: "How do you handle project communication?",
-      answer: "We use agile methodologies with regular sprint reviews, daily standups, and weekly client check-ins. You'll have access to our project management tools and a dedicated project manager as your main point of contact."
-    }
+      answer:
+        "We use agile methodologies with regular sprint reviews, daily standups, and weekly client check-ins. You'll have access to our project management tools and a dedicated project manager as your main point of contact.",
+    },
   ];
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -139,19 +168,22 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-red-50/30 via-transparent to-transparent"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center px-4 py-2 bg-red-100 rounded-full mb-6">
-              <span className="text-red-800 font-semibold text-sm tracking-wide">GET IN TOUCH</span>
+              <span className="text-red-800 font-semibold text-sm tracking-wide">
+                GET IN TOUCH
+              </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Let's Build Something
               <span className="block text-red-600">Amazing Together</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Ready to transform your ideas into reality? We'd love to hear about your project and discuss 
-              how we can help you achieve your goals.
+              Ready to transform your ideas into reality? We'd love to hear
+              about your project and discuss how we can help you achieve your
+              goals.
             </p>
           </div>
 
@@ -186,8 +218,12 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">How Can We Help You?</h2>
-            <p className="text-lg text-gray-600">Choose the best way to reach us</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              How Can We Help You?
+            </h2>
+            <p className="text-lg text-gray-600">
+              Choose the best way to reach us
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -195,17 +231,25 @@ Message: ${formData.message || 'I would like to know more about your services.'}
               <a
                 key={index}
                 href={method.link}
-                target={method.title === 'WhatsApp' ? '_blank' : '_self'}
-                rel={method.title === 'WhatsApp' ? 'noopener noreferrer' : ''}
+                target={method.title === "WhatsApp" ? "_blank" : "_self"}
+                rel={method.title === "WhatsApp" ? "noopener noreferrer" : ""}
                 className="group block p-6 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl hover:border-red-200 transition-all duration-300"
               >
                 <div className="flex flex-col items-center text-center">
-                  <div className={`${method.color} group-hover:scale-110 transition-transform duration-300 mb-4`}>
+                  <div
+                    className={`${method.color} group-hover:scale-110 transition-transform duration-300 mb-4`}
+                  >
                     {method.icon}
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{method.title}</h3>
-                  <p className="text-gray-700 font-medium mb-2">{method.content}</p>
-                  <p className="text-gray-500 text-sm mb-2">{method.description}</p>
+                  <h3 className="font-bold text-gray-900 mb-2">
+                    {method.title}
+                  </h3>
+                  <p className="text-gray-700 font-medium mb-2">
+                    {method.content}
+                  </p>
+                  <p className="text-gray-500 text-sm mb-2">
+                    {method.description}
+                  </p>
                   <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
                     {method.available}
                   </span>
@@ -222,15 +266,24 @@ Message: ${formData.message || 'I would like to know more about your services.'}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Start Your Project</h2>
-              <p className="text-gray-600 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Start Your Project
+              </h2>
+              <p className="text-gray-600 mb-8">
+                Fill out the form below and we'll get back to you within 24
+                hours.
+              </p>
 
               {isSubmitted && (
                 <div className="mb-8 p-6 bg-green-50 border border-green-200 rounded-2xl flex items-center">
                   <CheckCircle className="w-6 h-6 text-green-600 mr-3" />
                   <div>
-                    <div className="font-semibold text-green-800">Message sent successfully!</div>
-                    <div className="text-green-700 text-sm">We'll get back to you within 24 hours.</div>
+                    <div className="font-semibold text-green-800">
+                      Message sent successfully!
+                    </div>
+                    <div className="text-green-700 text-sm">
+                      We'll get back to you within 24 hours.
+                    </div>
                   </div>
                 </div>
               )}
@@ -238,7 +291,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-3">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-bold text-gray-700 mb-3"
+                    >
                       Full Name *
                     </label>
                     <input
@@ -253,7 +309,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-bold text-gray-700 mb-3">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-bold text-gray-700 mb-3"
+                    >
                       Email Address *
                     </label>
                     <input
@@ -270,7 +329,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-bold text-gray-700 mb-3">
+                  <label
+                    htmlFor="company"
+                    className="block text-sm font-bold text-gray-700 mb-3"
+                  >
                     Company Name
                   </label>
                   <input
@@ -285,7 +347,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                 </div>
 
                 <div>
-                  <label htmlFor="service" className="block text-sm font-bold text-gray-700 mb-3">
+                  <label
+                    htmlFor="service"
+                    className="block text-sm font-bold text-gray-700 mb-3"
+                  >
                     Service Interested In
                   </label>
                   <select
@@ -296,39 +361,35 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                     className="w-full px-6 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
                   >
                     <option value="">Select a service</option>
-                    <option value="custom-development">Custom Software Development</option>
-                    <option value="ui-ux-design">UI/UX Design & Branding</option>
-                    <option value="cloud-solutions">Cloud Solutions & DevOps</option>
-                    <option value="mobile-development">Mobile App Development</option>
+                    <option value="custom-development">
+                      Custom Software Development
+                    </option>
+                    <option value="ui-ux-design">
+                      UI/UX Design & Branding
+                    </option>
+                    <option value="cloud-solutions">
+                      Cloud Solutions & DevOps
+                    </option>
+                    <option value="mobile-development">
+                      Mobile App Development
+                    </option>
                     <option value="data-analytics">Data & Analytics</option>
-                    <option value="cybersecurity">Cybersecurity & Compliance</option>
-                    <option value="skill-development">Skill Development Programs</option>
+                    <option value="cybersecurity">
+                      Cybersecurity & Compliance
+                    </option>
+                    <option value="skill-development">
+                      Skill Development Programs
+                    </option>
                     <option value="consultation">General Consultation</option>
                   </select>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="budget" className="block text-sm font-bold text-gray-700 mb-3">
-                      Project Budget
-                    </label>
-                    <select
-                      id="budget"
-                      name="budget"
-                      value={formData.budget}
-                      onChange={handleChange}
-                      className="w-full px-6 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+                    <label
+                      htmlFor="timeline"
+                      className="block text-sm font-bold text-gray-700 mb-3"
                     >
-                      <option value="">Select budget range</option>
-                      <option value="under-25k">Under $25,000</option>
-                      <option value="25k-50k">$25,000 - $50,000</option>
-                      <option value="50k-100k">$50,000 - $100,000</option>
-                      <option value="100k-250k">$100,000 - $250,000</option>
-                      <option value="over-250k">Over $250,000</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label htmlFor="timeline" className="block text-sm font-bold text-gray-700 mb-3">
                       Project Timeline
                     </label>
                     <select
@@ -349,7 +410,10 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-3">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-bold text-gray-700 mb-3"
+                  >
                     Project Details *
                   </label>
                   <textarea
@@ -372,7 +436,7 @@ Message: ${formData.message || 'I would like to know more about your services.'}
                     Send Message
                     <Send className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
                   </button>
-                  
+
                   <button
                     type="button"
                     onClick={handleWhatsAppContact}
@@ -388,21 +452,31 @@ Message: ${formData.message || 'I would like to know more about your services.'}
             {/* Office Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Offices</h2>
-                <p className="text-gray-600 mb-8">Visit us at one of our locations or schedule a virtual meeting.</p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                  Our Offices
+                </h2>
+                <p className="text-gray-600 mb-8">
+                  Visit us at one of our locations or schedule a virtual
+                  meeting.
+                </p>
               </div>
 
               {offices.map((office, index) => (
-                <div key={index} className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+                <div
+                  key={index}
+                  className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100"
+                >
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl font-bold text-gray-900">{office.city}</h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {office.city}
+                    </h3>
                     {office.isHeadquarters && (
                       <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
                         Headquarters
                       </span>
                     )}
                   </div>
-                  
+
                   <div className="space-y-3 text-gray-600">
                     <div className="flex items-start">
                       <MapPin className="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -435,23 +509,36 @@ Message: ${formData.message || 'I would like to know more about your services.'}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-xl text-gray-600">Get quick answers to common questions</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600">
+              Get quick answers to common questions
+            </p>
           </div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-gray-50 rounded-2xl overflow-hidden">
+              <div
+                key={index}
+                className="bg-gray-50 rounded-2xl overflow-hidden"
+              >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-100 transition-colors"
                 >
-                  <span className="font-semibold text-gray-900">{faq.question}</span>
-                  <ArrowRight className={`w-5 h-5 text-gray-500 transition-transform ${openFaq === index ? 'rotate-90' : ''}`} />
+                  <span className="font-semibold text-gray-900">
+                    {faq.question}
+                  </span>
+                  <ArrowRight
+                    className={`w-5 h-5 text-gray-500 transition-transform ${openFaq === index ? "rotate-90" : ""}`}
+                  />
                 </button>
                 {openFaq === index && (
                   <div className="px-6 pb-6">
-                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                    <p className="text-gray-600 leading-relaxed">
+                      {faq.answer}
+                    </p>
                   </div>
                 )}
               </div>

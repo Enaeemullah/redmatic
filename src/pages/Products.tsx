@@ -17,11 +17,6 @@ const Products = () => {
       image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg',
       gradient: 'from-blue-500 to-blue-600',
       category: 'Business Management',
-      pricing: {
-        starter: { price: 15000, features: ['Basic POS', 'Inventory Tracking', 'Sales Reports', 'Up to 2 Users'] },
-        professional: { price: 25000, features: ['Advanced POS', 'Multi-location', 'Advanced Reports', 'Up to 10 Users', 'Customer Management'] },
-        enterprise: { price: 45000, features: ['Full POS Suite', 'Unlimited Users', 'Custom Reports', 'API Access', 'Priority Support'] }
-      },
       features: [
         {
           icon: <BarChart3 className="w-6 h-6" />,
@@ -88,11 +83,6 @@ const Products = () => {
       image: 'https://images.pexels.com/photos/4386465/pexels-photo-4386465.jpeg',
       gradient: 'from-green-500 to-green-600',
       category: 'Education Management',
-      pricing: {
-        basic: { price: 20000, features: ['Student Management', 'Basic Reports', 'Up to 500 Students', 'Email Support'] },
-        standard: { price: 35000, features: ['Full Academic Module', 'Fee Management', 'Up to 1500 Students', 'Parent Portal', 'SMS Integration'] },
-        premium: { price: 55000, features: ['Complete Suite', 'Unlimited Students', 'Mobile App', 'Advanced Analytics', 'Priority Support'] }
-      },
       features: [
         {
           icon: <Users className="w-6 h-6" />,
@@ -267,19 +257,6 @@ const Products = () => {
                     ))}
                   </div>
 
-                  {/* Pricing Preview */}
-                  <div className="flex items-center justify-between mb-6 p-4 bg-gray-50 rounded-2xl">
-                    <div>
-                      <div className="text-sm text-gray-600">Starting from</div>
-                      <div className="text-2xl font-bold text-gray-900">
-                        PKR {Object.values(product.pricing)[0].price.toLocaleString()}
-                      </div>
-                    </div>
-                    <div className="text-sm text-gray-500">
-                      {Object.keys(product.pricing).length} plans available
-                    </div>
-                  </div>
-
                   {/* Action Buttons */}
                   <div className="flex gap-3">
                     <button 
@@ -344,7 +321,7 @@ const Products = () => {
                   <div className="p-8">
                     {/* Tabs */}
                     <div className="flex space-x-1 mb-8 bg-gray-100 p-1 rounded-xl">
-                      {['overview', 'features', 'pricing', 'testimonials'].map((tab) => (
+                      {['overview', 'features', 'testimonials'].map((tab) => (
                         <button
                           key={tab}
                           onClick={() => setActiveTab(tab)}
@@ -425,55 +402,6 @@ const Products = () => {
                                   <p className="text-gray-600">{feature.description}</p>
                                 </div>
                               </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {activeTab === 'pricing' && (
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-6">Pricing Plans</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                          {Object.entries(product.pricing).map(([plan, details], index) => (
-                            <div key={plan} className={`bg-white p-6 rounded-2xl border-2 transition-all duration-300 ${
-                              index === 1 ? 'border-red-500 shadow-xl scale-105' : 'border-gray-200 hover:border-red-300 hover:shadow-lg'
-                            }`}>
-                              {index === 1 && (
-                                <div className="text-center mb-4">
-                                  <span className="bg-red-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                                    Most Popular
-                                  </span>
-                                </div>
-                              )}
-                              
-                              <div className="text-center mb-6">
-                                <h4 className="text-xl font-bold text-gray-900 mb-2 capitalize">{plan}</h4>
-                                <div className="text-3xl font-bold text-red-600 mb-2">
-                                  PKR {details.price.toLocaleString()}
-                                </div>
-                                <div className="text-gray-500">per month</div>
-                              </div>
-
-                              <ul className="space-y-3 mb-6">
-                                {details.features.map((feature, featureIndex) => (
-                                  <li key={featureIndex} className="flex items-start">
-                                    <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                                    <span className="text-gray-700">{feature}</span>
-                                  </li>
-                                ))}
-                              </ul>
-
-                              <button 
-                                onClick={() => handleWhatsAppContact(`${product.name} ${plan} plan`)}
-                                className={`w-full py-3 rounded-xl font-semibold transition-colors ${
-                                  index === 1
-                                    ? 'bg-red-600 text-white hover:bg-red-700'
-                                    : 'bg-gray-100 text-gray-700 hover:bg-red-50 hover:text-red-600'
-                                }`}
-                              >
-                                Get Started
-                              </button>
                             </div>
                           ))}
                         </div>

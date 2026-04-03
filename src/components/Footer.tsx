@@ -109,7 +109,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors group">
                   <Phone className="w-5 h-5 text-red-500 group-hover:text-red-400" />
-                  <span>+92 343 514 6644</span>
+                  <span>+92 341 4841372</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors group">
                   <MapPin className="w-5 h-5 text-red-500 group-hover:text-red-400" />
@@ -181,11 +181,7 @@ const Footer = () => {
                 <p className="text-gray-400 mb-2 md:mb-0 md:mr-6">
                   © {new Date().getFullYear()} Redmetic. All rights reserved.
                 </p>
-                <div className="flex items-center text-gray-400 text-sm">
-                  <span>Made with</span>
-                  <Heart className="w-4 h-4 text-red-500 mx-1" />
-                  <span>in Pakistan</span>
-                </div>
+
               </div>
               
               {/* Social Links */}
