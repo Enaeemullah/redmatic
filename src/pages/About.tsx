@@ -166,39 +166,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-24 bg-gray-50 logo-background-left">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From a small startup to a recognized leader in technology solutions, here's how we've grown.
-            </p>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-red-200"></div>
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                      <div className="text-red-600 font-bold text-lg mb-2">{item.year}</div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                      <p className="text-gray-600">{item.description}</p>
-                    </div>
-                  </div>
-                  <div className="relative z-10">
-                    <div className="w-4 h-4 bg-red-600 rounded-full border-4 border-white shadow-lg"></div>
-                  </div>
-                  <div className="w-1/2"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Values Section */}
       <section className="py-24 bg-white logo-background-bottom">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
